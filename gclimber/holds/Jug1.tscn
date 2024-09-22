@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://kfuntvxp47hd"]
+
+[ext_resource type="Script" path="res://holds/jug1.gd" id="1_ov52p"]
+
+[node name="Jug1" type="Node2D"]
+script = ExtResource("1_ov52p")
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(-166, -156)
+points = PackedVector2Array(137, 158, 152, 159, 171, 155, 195, 157)

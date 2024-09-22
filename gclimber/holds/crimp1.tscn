@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnimixu6hlyfh"]
+
+[ext_resource type="Script" path="res://holds/crimp1.gd" id="1_up47v"]
+
+[node name="Crimp1" type="Node2D"]
+script = ExtResource("1_up47v")
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(-143, -157)
+points = PackedVector2Array(137, 158, 152, 159)

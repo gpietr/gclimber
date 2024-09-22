@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://bwa1a0yeggqxi"]
+
+[ext_resource type="Script" path="res://game_scene.gd" id="1_rj0dk"]
+[ext_resource type="Texture2D" uid="uid://bp8abvd4cpqpm" path="res://climber.png" id="2_8f7bs"]
+[ext_resource type="Script" path="res://holds/jug1.gd" id="2_tma1p"]
+[ext_resource type="PackedScene" uid="uid://kfuntvxp47hd" path="res://holds/Jug1.tscn" id="3_72f52"]
+[ext_resource type="PackedScene" uid="uid://cnimixu6hlyfh" path="res://holds/crimp1.tscn" id="3_x8riu"]
+
+[node name="GameScene" type="Node2D"]
+script = ExtResource("1_rj0dk")
+
+[node name="holds" type="Node2D" parent="."]
+script = ExtResource("2_tma1p")
+
+[node name="starting_hold" parent="holds" instance=ExtResource("3_72f52")]
+position = Vector2(569, 543)
+
+[node name="Jug2" parent="holds" instance=ExtResource("3_72f52")]
+position = Vector2(529, 505)
+
+[node name="Crimp1" parent="holds" instance=ExtResource("3_x8riu")]
+position = Vector2(563, 279)
+
+[node name="Jug3" parent="holds" instance=ExtResource("3_72f52")]
+position = Vector2(547, 435)
+
+[node name="Crimp2" parent="holds" instance=ExtResource("3_x8riu")]
+position = Vector2(430, 276)
+
+[node name="Crimp3" parent="holds" instance=ExtResource("3_x8riu")]
+position = Vector2(652, 346)
+
+[node name="Crimp4" parent="holds" instance=ExtResource("3_x8riu")]
+position = Vector2(553, 395)
+
+[node name="Crimp5" parent="holds" instance=ExtResource("3_x8riu")]
+position = Vector2(492, 471)
+
+[node name="Jug1" parent="holds" instance=ExtResource("3_72f52")]
+position = Vector2(522, 198)
+
+[node name="Climber" type="Sprite2D" parent="."]
+position = Vector2(571, 593)
+texture = ExtResource("2_8f7bs")
+
+[node name="EnergyBar" type="ProgressBar" parent="."]
+offset_left = 809.0
+offset_top = 16.0
+offset_right = 1099.0
+offset_bottom = 64.0
+
+[node name="CurrentHoldStatus" type="RichTextLabel" parent="."]
+offset_left = 811.0
+offset_top = 83.0
+offset_right = 1097.0
+offset_bottom = 123.0
+
+[node name="TargetHoldStatus" type="RichTextLabel" parent="."]
+offset_left = 819.0
+offset_top = 154.0
+offset_right = 1097.0
+offset_bottom = 194.0

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c48oj02727hml"]
+
+[node name="hold_scene" type="Node2D"]
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(-143, -157)
+points = PackedVector2Array(137, 158, 152, 159)
